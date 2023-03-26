@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image filter | RNA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image filter. Try it out!</h1>
+      <div class="options">
+        <div class="img-btns">
+          <label class="upload-btn" for="image">Add Image</label>
+          <input
+            type="file"
+            id="image"
+            multiple="false"
+            accept="image/*"
+            value=""
+          />
+          <button type="button" class="remove-img disabled">
+            Remove Image
+          </button>
+        </div>
+        <div class="filter-btns">
+          <button type="button" class="clear disabled">Clear filter</button>
+          <button type="button" class="grayscale disabled">Grayscale</button>
+          <button type="button" class="red-hue disabled">Red Hue</button>
+          <button type="button" class="blue-hue disabled">Blue Hue</button>
+          <button type="button" class="green-hue disabled">Green Hue</button>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="./js/SampleImage.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
